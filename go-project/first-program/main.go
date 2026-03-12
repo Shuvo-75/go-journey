@@ -7,6 +7,19 @@ func add(num1 int, num2 int) {
 
 	fmt.Println(sum)
 }
+
+func mul(num1 int, num2 int) int {
+	mul := num1 * num2
+
+	return mul
+}
+
+func getNumbers(num1 int, num2 int) (int, int) {
+	sum := num1 + num2
+	mul := num1 * num2
+
+	return sum, mul
+}
 func main() {
 	// fmt.Println("Hello World!")
 
@@ -73,5 +86,14 @@ func main() {
 	// sum := a + b
 
 	// fmt.Println(sum)
-	add(a, b)
+	// add(a, b)
+
+	// multiply := mul(a, b)
+
+	// fmt.Println(multiply)
+
+	p, q := getNumbers(a, b)
+
+	fmt.Println(p, q)
+
 }
